@@ -13,7 +13,23 @@ Practice core AWS serverless services:
 
 ## Architecture
 
-Client -> API Gateway -> Lambda -> SQS -> Lambda -> DynamoDB
+```mermaid
+flowchart LR
+    Client[Client]
+    APIGW[API Gateway]
+    Submit[Lambda submit]
+    Queue[SQS]
+    Process[Lambda process]
+    DB[DynamoDB]
+
+    Client --> APIGW
+    APIGW --> Submit
+    Submit --> Queue
+    Queue --> Process
+    Process --> DB
+    
+    
+```
 
 ## Flow
 
@@ -22,6 +38,23 @@ Client -> API Gateway -> Lambda -> SQS -> Lambda -> DynamoDB
 3. Lambda processes event
 4. Event is stored in DynamoDB as audit history
 5. Client can retrieve price change history
+
+```mermaid
+sequenceDiagram
+Client->>API Gateway: submit request
+API Gateway->>Lambda submit: invoke
+Lambda submit->>SQS: send message
+SQS->>Lambda process: trigger
+Lambda process->>DynamoDB: save result
+```
+
+## Async processing
+```mermaid
+flowchart LR
+SQS --> Lambda
+Lambda --> DynamoDB
+Lambda --> CloudWatch
+```
 
 ## Endpoints
 
