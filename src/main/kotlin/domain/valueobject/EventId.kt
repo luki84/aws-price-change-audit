@@ -11,6 +11,10 @@ value class EventId private constructor(
     }
 
     companion object {
+        fun of(value: String) = EventId(value.trim())
+
         fun random() = EventId(UUID.randomUUID().toString())
     }
+
+    override fun toString(): String = value
 }
