@@ -1,4 +1,4 @@
-package domain.model
+package domain.valueobject
 
 @JvmInline
 value class ProductId(val value: String) {
