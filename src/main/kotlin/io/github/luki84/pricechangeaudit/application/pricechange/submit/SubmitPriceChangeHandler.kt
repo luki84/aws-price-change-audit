@@ -1,19 +1,19 @@
-package io.github.luki84.pricechangeaudit.application.submit
+package io.github.luki84.pricechangeaudit.application.pricechange.submit
 
-import io.github.luki84.pricechangeaudit.domain.model.PriceEventType
-import io.github.luki84.pricechangeaudit.domain.model.ProductPriceChanged
-import io.github.luki84.pricechangeaudit.domain.valueobject.EventId
-import io.github.luki84.pricechangeaudit.port.submit.PriceChangeEventPublisher
-import io.github.luki84.pricechangeaudit.port.submit.SubmitPriceChangeUseCase
+import io.github.luki84.pricechangeaudit.application.port.inbound.SubmitPriceChangeUseCase
+import io.github.luki84.pricechangeaudit.application.port.outbound.PublishPriceChangeSubmitted
+import io.github.luki84.pricechangeaudit.domain.model.pricechange.EventId
+import io.github.luki84.pricechangeaudit.domain.model.pricechange.PriceEventType
+import io.github.luki84.pricechangeaudit.domain.model.pricechange.ProductPriceChanged
 import java.time.Clock
 import java.time.Instant
 
 class SubmitPriceChangeHandler(
-    private val priceChangeEventPublisher: PriceChangeEventPublisher,
+    private val publishPriceChangeSubmitted: PublishPriceChangeSubmitted,
     private val clock: Clock = Clock.systemUTC(),
 ) : SubmitPriceChangeUseCase {
     override fun handle(command: SubmitPriceChangeCommand) {
-        priceChangeEventPublisher.publish(
+        publishPriceChangeSubmitted.publish(
             ProductPriceChanged(
                 eventId = EventId.random(),
                 eventType = PriceEventType.PRODUCT_PRICE_CHANGED,

@@ -1,4 +1,4 @@
-package io.github.luki84.pricechangeaudit.domain.valueobject
+package io.github.luki84.pricechangeaudit.domain.model.money
 
 import java.util.Currency
 import java.util.Locale

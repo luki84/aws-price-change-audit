@@ -1,8 +1,6 @@
-package io.github.luki84.pricechangeaudit.domain.model
+package io.github.luki84.pricechangeaudit.domain.model.pricechange
 
-import io.github.luki84.pricechangeaudit.domain.valueobject.EventId
-import io.github.luki84.pricechangeaudit.domain.valueobject.Money
-import io.github.luki84.pricechangeaudit.domain.valueobject.ProductId
+import io.github.luki84.pricechangeaudit.domain.model.money.Money
 import java.time.Instant
 
 data class ProductPriceChanged(

@@ -1,4 +1,4 @@
-package io.github.luki84.pricechangeaudit.domain.valueobject
+package io.github.luki84.pricechangeaudit.domain.model.pricechange
 
 @JvmInline
 value class ProductId(

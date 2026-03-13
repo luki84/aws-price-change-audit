@@ -1,8 +1,9 @@
-package io.github.luki84.pricechangeaudit.application.submit
+package io.github.luki84.pricechangeaudit.application.pricechange.submit
 
-import io.github.luki84.pricechangeaudit.domain.valueobject.CurrencyCode
-import io.github.luki84.pricechangeaudit.domain.valueobject.Money
-import io.github.luki84.pricechangeaudit.domain.valueobject.ProductId
+import io.github.luki84.pricechangeaudit.application.pricechange.submit.SubmitPriceChangeCommand
+import io.github.luki84.pricechangeaudit.domain.model.money.CurrencyCode
+import io.github.luki84.pricechangeaudit.domain.model.money.Money
+import io.github.luki84.pricechangeaudit.domain.model.pricechange.ProductId
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import java.math.BigDecimal

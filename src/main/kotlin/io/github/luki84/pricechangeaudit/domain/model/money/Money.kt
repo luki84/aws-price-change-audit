@@ -1,9 +1,8 @@
-package io.github.luki84.pricechangeaudit.domain.valueobject
+package io.github.luki84.pricechangeaudit.domain.model.money
 
 import java.math.BigDecimal
 
-@ConsistentCopyVisibility
-data class Money private constructor(
+class Money private constructor(
     val amount: BigDecimal,
     val currency: CurrencyCode,
 ) {

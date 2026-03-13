@@ -1,5 +1,6 @@
-package io.github.luki84.pricechangeaudit.domain.valueobject
+package io.github.luki84.pricechangeaudit.domain.pricechange
 
+import io.github.luki84.pricechangeaudit.domain.model.pricechange.EventId
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 

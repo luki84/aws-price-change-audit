@@ -1,7 +1,7 @@
-package io.github.luki84.pricechangeaudit.application.submit
+package io.github.luki84.pricechangeaudit.application.pricechange.submit
 
-import io.github.luki84.pricechangeaudit.domain.valueobject.Money
-import io.github.luki84.pricechangeaudit.domain.valueobject.ProductId
+import io.github.luki84.pricechangeaudit.domain.model.money.Money
+import io.github.luki84.pricechangeaudit.domain.model.pricechange.ProductId
 
 data class SubmitPriceChangeCommand(
     val productId: ProductId,

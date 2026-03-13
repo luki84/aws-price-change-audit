@@ -1,5 +1,7 @@
-package io.github.luki84.pricechangeaudit.domain.valueobject
+package io.github.luki84.pricechangeaudit.domain.money
 
+import io.github.luki84.pricechangeaudit.domain.model.money.CurrencyCode
+import io.github.luki84.pricechangeaudit.domain.model.money.Money
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import java.math.BigDecimal
