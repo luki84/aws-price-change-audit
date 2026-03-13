@@ -1,4 +1,4 @@
-package domain.valueobject
+package io.github.luki84.pricechangeaudit.domain.valueobject
 
 import java.math.BigDecimal
 

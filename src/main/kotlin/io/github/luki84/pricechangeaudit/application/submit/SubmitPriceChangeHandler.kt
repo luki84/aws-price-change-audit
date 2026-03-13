@@ -1,10 +1,10 @@
-package application.submit
+package io.github.luki84.pricechangeaudit.application.submit
 
-import domain.model.PriceEventType
-import domain.model.ProductPriceChanged
-import domain.valueobject.EventId
-import port.submit.PriceChangeEventPublisher
-import port.submit.SubmitPriceChangeUseCase
+import io.github.luki84.pricechangeaudit.domain.model.PriceEventType
+import io.github.luki84.pricechangeaudit.domain.model.ProductPriceChanged
+import io.github.luki84.pricechangeaudit.domain.valueobject.EventId
+import io.github.luki84.pricechangeaudit.port.submit.PriceChangeEventPublisher
+import io.github.luki84.pricechangeaudit.port.submit.SubmitPriceChangeUseCase
 import java.time.Clock
 import java.time.Instant
 
