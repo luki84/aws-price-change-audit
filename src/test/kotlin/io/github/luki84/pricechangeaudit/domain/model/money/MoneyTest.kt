@@ -1,4 +1,4 @@
-package io.github.luki84.pricechangeaudit.domain.money
+package io.github.luki84.pricechangeaudit.domain.model.money
 
 import io.github.luki84.pricechangeaudit.domain.model.money.CurrencyCode
 import io.github.luki84.pricechangeaudit.domain.model.money.Money
