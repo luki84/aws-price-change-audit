@@ -3,7 +3,7 @@ plugins {
     id("org.jlleitschuh.gradle.ktlint") version "14.0.1"
 }
 
-group = "com.luki"
+group = "io.github.lukidiversityapps"
 version = "1.0-SNAPSHOT"
 
 repositories {
