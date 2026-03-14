@@ -1,4 +1,4 @@
-package io.github.luki84.pricechangeaudit.application.port.outbound
+package io.github.luki84.pricechangeaudit.application.port.outbound.pricechange
 
 import io.github.luki84.pricechangeaudit.domain.model.pricechange.PriceChanged
 
